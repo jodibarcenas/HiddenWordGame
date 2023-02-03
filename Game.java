@@ -23,9 +23,9 @@ public class Game {
                 if(hidden.substring(i,i+1).equals(guess.substring(i,i+1))){
                     hint += guess.substring(i,i+1);
                 }else if(hidden.indexOf(guess.substring(i,i+1)) != -1){
-                    hint += "*";
-                }else{
                     hint += "+";
+                }else{
+                    hint += "*";
                 }
             }
             System.out.println(hint);
